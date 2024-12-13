@@ -1,7 +1,5 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Using a read7() method that returns 7 characters from a file, implement readN(n) which reads n characters.
+# For example, given a file with the content “Hello world”, three read7() returns “Hello w”, “orld” and then “”.
 from Read7 import Read7
 from ReadN import read_n
 
