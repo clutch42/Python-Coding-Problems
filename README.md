@@ -85,3 +85,11 @@ Using a read7() method that returns 7 characters from a file, implement readN(n)
 
 For example, given a file with the content “Hello world”, three read7() returns “Hello w”, “orld” and then “”.
 </details>
+<details>
+<summary>
+  
+## Problem 775 - Overlapping Intervals
+</summary>
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+</details>
