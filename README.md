@@ -12,6 +12,13 @@ For example, given that W is "ab", and S is "abxaba", return 0, 3, and 4.
 <details>
 <summary>
   
+## Problem 768 - Min / Max
+</summary>
+Given an array of numbers of length N, find both the minimum and maximum using less than 2 * (N - 2) comparisons.
+</details>
+<details>
+<summary>
+  
 ## Problem 769 - Probability
 </summary>
 Alice wants to join her school's Probability Student Club. Membership dues are computed via one of two simple probabilistic games.
