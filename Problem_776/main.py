@@ -6,7 +6,7 @@
 # For example, if N = 5 and k = 2, the order of executions would be [2, 4, 1, 5, 3], so you
 # should return 3.
 # Bonus: Find an O(log N) solution if k = 2.
-from Last_Executed import last_executed
+from Last_Executed import last_executed, last_if_k_is_2
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -26,5 +26,6 @@ if __name__ == '__main__':
             print("Enter an integer")
     print(f"Prisoners: {n} Number to skip: {k}")
     print(f"Last prisoner executed: {last_executed(n, k)}")
+    # print(f"If skip is 2 last prisoner executed is: {last_if_k_is_2(n)}")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

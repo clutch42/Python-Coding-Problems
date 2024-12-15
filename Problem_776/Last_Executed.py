@@ -12,3 +12,9 @@ def last_executed(number_of_prisoners, number_to_skip):
     last = prisoners[0] - 1
     order[last] = current_execution
     return last, order
+
+
+def last_if_k_is_2(n):
+    largest_power_of_2 = 1 << (n.bit_length() - 1)
+    print(largest_power_of_2)
+    return 2*(n - largest_power_of_2) - 1
