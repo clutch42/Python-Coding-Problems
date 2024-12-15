@@ -93,3 +93,13 @@ For example, given a file with the content “Hello world”, three read7() retu
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 </details>
+<details>
+<summary>
+  
+## Problem 776 - Josephus Problem
+</summary>
+There are N prisoners standing in a circle, waiting to be executed. The executions are carried out starting with the kth person, and removing every successive kth person going clockwise until there is no one left.
+Given N and k, write an algorithm to determine where a prisoner should stand in order to be the last survivor.
+For example, if N = 5 and k = 2, the order of executions would be [2, 4, 1, 5, 3], so you should return 3.
+Bonus: Find an O(log N) solution if k = 2.
+</details>
