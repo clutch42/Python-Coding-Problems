@@ -116,6 +116,7 @@ Bonus: Find an O(log N) solution if k = 2.
 ## Problem 777 - Ternary Search Tree
 </summary>
 A ternary search tree is a trie-like data structure where each node may have up to three children. Here is an example which represents the words code, cob, be, ax, war, and we.
+
 ```
        c
     /  |  \
