@@ -36,74 +36,30 @@ class TernaryTree:
     def __init__(self):
         self.root = None
 
-    def insert2(self, word):
-        word_array = make_array(word)
-        if not word_array:
+    def insert(self, word):
+        if len(word) == 0:
             return False
         if self.root is None:
-            self.root = Node(word_array[0])
+            self.root = Node(word[0])
+        return self._insert(word, self.root)
 
-        index = 0
-        current_node = self.root
-        previous = None
-
-        while index < len(word_array):
-            char = word_array[index]
-            if current_node is None:
-                current_node = Node(char)
-                if previous.value == word_array[index-1]:
-                    previous.center = current_node
-                elif previous.value > word_array[index-1]:
-                    previous.right = current_node
-                elif previous.value < word_array[index-1]:
-                    previous.left = current_node
-            elif char == current_node.value:
-                previous = current_node
-                current_node = current_node.center
-                index += 1
-            elif char < current_node.value:
-                previous = current_node
-                current_node = current_node.left
-            elif char > current_node.value:
-                previous = current_node
-                current_node = current_node.right
-        return True
-
-    def insert(self, word):
-        word_array = make_array(word)
-        if self.root is None:
-            self.root = Node(word_array[0])
-        index = 0
-        current_node = self.root
-        while index < len(word_array):
-            if current_node.center is None and word_array[index] == current_node.value:
-                print("branch 1")
-                index += 1
-                if index < len(word_array):
-                    current_node.center = Node(word_array[index])
-                    current_node = current_node.center
-            elif current_node.center is None and current_node.right is None and current_node.left is None:
-                print("branch 2")
-                current_node.center = Node(word_array[index])
-                index += 1
-                current_node = current_node.center
-            elif current_node.center is not None and word_array[index] == current_node.value:
-                print("branch 3")
-                current_node = current_node.center
-                index += 1
-            elif word_array[index] < current_node.value:
-                print("branch 4")
-                if current_node.left is None:
-                    current_node.left = Node(word_array[index])
-                    index += 1
-                current_node = current_node.left
-            elif word_array[index] > current_node.value:
-                print("branch 5")
-                if current_node.right is None:
-                    current_node.right = Node(word_array[index])
-                    index += 1
-                current_node = current_node.right
-        return True
+    def _insert(self, word, node):
+        if len(word) == 0:
+            return True
+        if node is None:
+            node = Node(word[0])
+        if node.value == word[0]:
+            if node.center is None:
+                node.center = Node(word[1]) if len(word) > 1 else None
+            return self._insert(word[1:], node.center)
+        if node.value > word[0]:
+            if node.left is None:
+                node.left = Node(word[0])
+            return self._insert(word, node.left)
+        if node.value < word[0]:
+            if node.right is None:
+                node.right = Node(word[0])
+            return self._insert(word, node.right)
 
     def search(self, word):
         word_array = make_array(word)

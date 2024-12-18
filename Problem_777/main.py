@@ -30,7 +30,7 @@ if __name__ == '__main__':
             break
         elif user == "1":
             word_insert = input("Enter word to insert to tree: ")
-            if user_tree.insert2(word_insert):
+            if user_tree.insert(word_insert):
                 print(f"{word_insert} inserted in tree.")
             else:
                 print(f"{word_insert} not inserted in tree.")
