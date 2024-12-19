@@ -46,8 +46,6 @@ class TernaryTree:
     def _insert(self, word, node):
         if len(word) == 0:
             return True
-        if node is None:
-            node = Node(word[0])
         if node.value == word[0]:
             if node.center is None:
                 node.center = Node(word[1]) if len(word) > 1 else None
