@@ -134,3 +134,25 @@ middle child nodes continue the current word
 For instance, since code is the first word inserted in the tree, and cob lexicographically precedes cod, cob is represented as a left child extending from cod.
 Implement insertion and search functions for a ternary search tree.
 </details>
+<details>
+<summary>
+  
+## Problem 778 - Interweave Priority Lists
+</summary>
+You have access to ranked lists of songs for various users. Each song is represented as an integer, and more preferred songs appear earlier in each list. For example, the list [4, 1, 7] indicates that a user likes song 4 the best, followed by songs 1 and 7.
+
+Given a set of these ranked lists, interleave them to create a playlist that satisfies everyone's priorities.
+
+For example, suppose your input is {[1, 7, 3], [2, 1, 6, 7, 9], [3, 9, 5]}. In this case a satisfactory playlist could be [2, 1, 6, 7, 3, 9, 5].
+</details>
+<details>
+<summary>
+  
+## Problem 779 - Minimum Tries
+</summary>
+You are given N identical eggs and access to a building with k floors. Your task is to find the lowest floor that will cause an egg to break, if dropped from that floor. Once an egg breaks, it cannot be dropped again. If an egg breaks when dropped from the xth floor, you can assume it will also break when dropped from any floor greater than x.
+
+Write an algorithm that finds the minimum number of trial drops it will take, in the worst case, to identify this floor.
+
+For example, if N = 1 and k = 5, we will need to try dropping the egg at every floor, beginning with the first, until we reach the fifth floor, so our solution will be 5.
+</details>
