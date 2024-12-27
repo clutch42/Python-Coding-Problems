@@ -198,3 +198,14 @@ For example, given the following matrix:
 and the target word 'FOAM', you should return true, since it's the leftmost column. Similarly, given the target word 'MASS', you should return true, since it's the last row.
 
 </details>
+<details>
+<summary>
+  
+## Problem 785 - Maximum Product
+</summary>
+Given a list of integers, return the largest product that can be made by multiplying any three integers.
+
+For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
+
+You can assume the list has at least three integers.
+</details>
