@@ -209,3 +209,11 @@ For example, if the list is [-10, -10, 5, 2], we should return 500, since that's
 
 You can assume the list has at least three integers.
 </details>
+<details>
+<summary>
+  
+## Problem 788 - Integer Palindrome
+</summary>
+Write a program that checks whether an integer is a palindrome. For example, 121 is a palindrome, as well as 888. 678 is not a palindrome. Do not convert the integer into a string.
+</details>
+
