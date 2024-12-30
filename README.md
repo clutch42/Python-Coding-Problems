@@ -216,4 +216,13 @@ You can assume the list has at least three integers.
 </summary>
 Write a program that checks whether an integer is a palindrome. For example, 121 is a palindrome, as well as 888. 678 is not a palindrome. Do not convert the integer into a string.
 </details>
+<details>
+<summary>
+  
+## Problem 791 - Possible Dice Rolls
+</summary>
+Write a function, throw_dice(N, faces, total), that determines how many ways it is possible to throw N dice with some number of faces each to get a specific total.
+
+For example, throw_dice(3, 6, 7) should equal 15.
+</details>
 
